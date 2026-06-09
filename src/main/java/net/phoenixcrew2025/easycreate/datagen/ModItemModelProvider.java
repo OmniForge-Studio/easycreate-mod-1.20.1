@@ -69,6 +69,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.MODIUM_GOD_PART);
         simpleItem(ModItems.ECREATE_CRYSTAL);
 
+        simpleItem(ModItems.EYE_OF_DEATH);
+        simpleItem(ModItems.TEAR_OF_DEATH);
+        simpleItem(ModItems.TIME_OF_DEATH);
+
         simpleItem(ModItems.DEMONS_SONG_MUSIC_DISC);
 
         simpleItem(ModItems.ATM_ALLOY_SMITHING_TEMPLATE);

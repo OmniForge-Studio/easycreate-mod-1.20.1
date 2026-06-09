@@ -97,6 +97,18 @@ public class ModItems {
             () -> new RecordItem(6, ModSounds.DEMONS_SONG, new Item.Properties().stacksTo(1), 3500));
 
 
+
+
+    public static final RegistryObject<Item> EYE_OF_DEATH = ITEMS.register("eye_of_death",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> TEAR_OF_DEATH = ITEMS.register("tear_of_death",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> TIME_OF_DEATH = ITEMS.register("time_of_death",
+            () -> new Item(new Item.Properties()));
+
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

@@ -87,6 +87,10 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModItems.ATM_ALLOY_SMITHING_TEMPLATE.get());
 
+                        pOutput.accept(ModItems.EYE_OF_DEATH.get());
+                        pOutput.accept(ModItems.TEAR_OF_DEATH.get());
+                        pOutput.accept(ModItems.TIME_OF_DEATH.get());
+
                     })
                     .build());
 

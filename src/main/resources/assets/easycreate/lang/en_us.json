@@ -55,6 +55,15 @@
   "item.easycreate.demons_song_music_disc": "Ain't no rest for the wicked Song",
   "item.easycreate.demons_song_music_disc.desc": "Cage the Elephant - Ain't no rest for the wicked",
 
+  "item.easycreate.eye_of_death": "Eye of Death",
+  "item.easycreate.eye_of_death.desc": "A mysterious eye that seems to have a connection to death",
+
+  "item.easycreate.tear_of_death": "Tear of Death",
+  "item.easycreate.tear_of_death.desc": "A tear that seems to have a connection to death",
+
+  "item.easycreate.time_of_death": "Time of Death",
+  "item.easycreate.time_of_death.desc": "A timer that seems to have a connection to death",
+
   "creativetab.easycreate.easy_create_items_tab": "ECreate Items Tab",
   "creativetab.easycreate.easy_create_blocks_tab": "ECreate Blocks Tab",
   "creativetab.easycreate.easy_create_at_tab": "ECreate Armor/Tools Tab",

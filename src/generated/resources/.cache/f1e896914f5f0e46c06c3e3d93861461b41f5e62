@@ -1,4 +1,4 @@
-// 1.20.1	2025-08-20T22:13:28.2959458	Item Models: easycreate
+// 1.20.1	2026-06-09T10:57:35.7224318	Item Models: easycreate
 338fb2860fe65b79c0d04ac3a32477b118680963 assets/easycreate/models/item/atm_alloy_smithing_template.json
 b808abdf9a2684b6ace1b67a0b4cd775b4eb94b7 assets/easycreate/models/item/blood_god_part.json
 437ab16f0e1a39d2251652878233c4bc1d11acf6 assets/easycreate/models/item/create_god_part.json
@@ -68,9 +68,12 @@ aecf85d06ffd686de3492250a14eb96501f33640 assets/easycreate/models/item/ecreate_s
 13e74e4a4679df5d2b6173651ac58f1c1a02e21f assets/easycreate/models/item/ecreate_shard.json
 0e667ba99ad434da4dbf97a475e9b2dd27e1c3e1 assets/easycreate/models/item/ecreate_shovel.json
 fbfc00f897f09477c5c642f0acb141e2f2ab886d assets/easycreate/models/item/ecreate_sword.json
+6398c52a44c795d31c027f7f053bbb16645ebfdd assets/easycreate/models/item/eye_of_death.json
 0b24d6f441d8d506605f6bf2f9c8650d85c16815 assets/easycreate/models/item/food_god_part.json
 498fec3ae678dafa1e82a1168b5e2ffc0ad2327a assets/easycreate/models/item/god_main_part.json
 87da2485a133e524f908b4c140672fb25caaa162 assets/easycreate/models/item/heart_of_ecreate.json
 efb4a4d5fd16ae505d83053ed2f805e3811d1162 assets/easycreate/models/item/mek_god_part.json
 410b503ffe7b17e2037f056ff8026857f5aa37a2 assets/easycreate/models/item/modium_god_part.json
 4cc0df13f7b1e04587b5ae0158602bec1eea1df0 assets/easycreate/models/item/ore_god_part.json
+0afaf8af788792e749a6c9f748349a158a88c54d assets/easycreate/models/item/tear_of_death.json
+aee44b0f54ec1c27fa982c0a52c19ef17ae41a84 assets/easycreate/models/item/time_of_death.json

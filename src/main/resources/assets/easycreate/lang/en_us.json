@@ -49,6 +49,7 @@
   "tooltip.easycreate.ecreate_corrupted_gold_ore": "§eYou can Find this Ore in the §nBadlands§r§e Biome",
   "tooltip.easycreate.ecreate_corrupted_diamond_ore": "§eYou can find this Ore in the §nSnowy Taiga§r§e Biome",
   "tooltip.easycreate.ecreate_corrupted_emerald_ore": "§eYou can find this Ore in the §nDark Forest§r§e Biome",
+  "tooltip.easycreate.death_ore": "§eYou can find this Ore in the §nDeep Dark§r§e Biome",
 
   "item.easycreate.atm_alloy_smithing_template": "AllTheModium Alloy Smithing Template",
 
@@ -63,6 +64,8 @@
 
   "item.easycreate.time_of_death": "Time of Death",
   "item.easycreate.time_of_death.desc": "A timer that seems to have a connection to death",
+
+  "block.easycreate.death_ore": "Death Ore",
 
   "creativetab.easycreate.easy_create_items_tab": "ECreate Items Tab",
   "creativetab.easycreate.easy_create_blocks_tab": "ECreate Blocks Tab",

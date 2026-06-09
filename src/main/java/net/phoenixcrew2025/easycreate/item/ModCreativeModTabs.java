@@ -24,6 +24,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.ECREATE_CORRUPTED_DIAMOND_ORE.get());
                         pOutput.accept(ModBlocks.ECREATE_CORRUPTED_EMERALD_ORE.get());
                         pOutput.accept(ModBlocks.ECREATE_CORRUPTED_COAL_ORE.get());
+                        pOutput.accept(ModBlocks.DEATH_ORE.get());
                     })
                     .build());
 

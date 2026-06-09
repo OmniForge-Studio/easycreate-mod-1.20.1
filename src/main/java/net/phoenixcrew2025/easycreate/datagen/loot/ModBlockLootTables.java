@@ -8,6 +8,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
@@ -17,6 +18,7 @@ import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.predicates.BonusLevelTableCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
+import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
 import net.phoenixcrew2025.easycreate.block.ModBlocks;
@@ -50,6 +52,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.ECREATE_CORRUPTED_COAL_ORE.get(),
                 block -> createecreatecoalDrops(ModBlocks.ECREATE_CORRUPTED_COAL_ORE.get(), ModItems.ECREATE_CORRUPTED_COAL.get()));
 
+        this.add(ModBlocks.DEATH_ORE.get(),
+                block -> createDeathOreDrops(ModBlocks.DEATH_ORE.get()));
 
 
 
@@ -77,6 +81,29 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                         LootItem.lootTableItem(item)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 8.0F)))
                                 .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
+    }
+
+    protected LootTable.Builder createDeathOreDrops(Block pBlock) {
+        return LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .when(HAS_SILK_TOUCH)
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(pBlock)))
+                .withPool(LootPool.lootPool()
+                        .when(HAS_NO_SILK_TOUCH)
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(this.applyExplosionDecay(pBlock,
+                                LootItem.lootTableItem(ModItems.EYE_OF_DEATH.get())
+                                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 1.0F)))
+                                        .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))))
+                        .add(this.applyExplosionDecay(pBlock,
+                                LootItem.lootTableItem(ModItems.TEAR_OF_DEATH.get())
+                                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 1.0F)))
+                                        .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))))
+                        .add(this.applyExplosionDecay(pBlock,
+                                LootItem.lootTableItem(ModItems.TIME_OF_DEATH.get())
+                                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 1.0F)))
+                                        .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE)))));
     }
 
 

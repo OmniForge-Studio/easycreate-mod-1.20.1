@@ -1,4 +1,5 @@
-// 1.20.1	2025-07-04T05:46:37.5236959	Block States: easycreate
+// 1.20.1	2026-06-09T14:36:55.3557837	Block States: easycreate
+a30886ce3e4df2784a8f7ec3f5a2f384c7ac33b8 assets/easycreate/blockstates/death_ore.json
 515d09d95398a0a2687c6cd1a7a5eafe25311e07 assets/easycreate/blockstates/ecreate_corrupted_coal_ore.json
 75a5e0a9ffbefe931c59bdee639149a25f86a4ef assets/easycreate/blockstates/ecreate_corrupted_diamond_ore.json
 1dd478dad3818a828849a38eba1428c7790260ae assets/easycreate/blockstates/ecreate_corrupted_emerald_ore.json
@@ -6,6 +7,7 @@
 2e44dea74f01509f843cd497340692c0109d47f0 assets/easycreate/blockstates/ecreate_corrupted_iron_block.json
 53f0b9e4f6e132a84a7e58d61edfa10c861e4718 assets/easycreate/blockstates/ecreate_corrupted_iron_ore.json
 cf2ff5413e6e2bf033f261d5473f8ccb2ef78718 assets/easycreate/blockstates/ecreate_crop.json
+20259bdaba2c1e6cb4bf52f92334ffc2231d8002 assets/easycreate/models/block/death_ore.json
 a931d8b4aceb286f7d2a571bac930ce8e6c2b1b2 assets/easycreate/models/block/ecreate_corrupted_coal_ore.json
 b7a37909815126f6c6eed0eb002fcd08efa380c9 assets/easycreate/models/block/ecreate_corrupted_diamond_ore.json
 040d9d688133a612bdd77d915d3c5261fb60e5c0 assets/easycreate/models/block/ecreate_corrupted_emerald_ore.json
@@ -18,6 +20,7 @@ a5f9b0338c4ab7a9ad5355fdea6150b6277de989 assets/easycreate/models/block/ecreate_
 3aa23ce634e7bbfc71de02a92a4d90f1a77df753 assets/easycreate/models/block/ecreate_stage3.json
 4663fe6196791315cf05e8c37342cee1ff370978 assets/easycreate/models/block/ecreate_stage4.json
 14c0dfb444178ace231f3f6bd50b3daa8a8f1c69 assets/easycreate/models/block/ecreate_stage5.json
+1d9cfdc9092707d0eadde9d8c0392a34f103b323 assets/easycreate/models/item/death_ore.json
 1e05c02eca154f9d13b8905b7b1ca9ef8609eb7d assets/easycreate/models/item/ecreate_corrupted_coal_ore.json
 a540779be64569f9278dcf6f5ef6e6a654bb3052 assets/easycreate/models/item/ecreate_corrupted_diamond_ore.json
 ecb1e60cbde11b68f0e87488b842df16055cf274 assets/easycreate/models/item/ecreate_corrupted_emerald_ore.json

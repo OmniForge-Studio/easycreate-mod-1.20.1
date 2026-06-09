@@ -22,9 +22,11 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_ECREATE_CORRUPTED_GOLD_ORE_KEY = registerKey("ecreate_corrupted_gold_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_ECREATE_CORRUPTED_DIAMOND_ORE_KEY = registerKey("ecreate_corrupted_diamond_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_ECREATE_CORRUPTED_EMERALD_ORE_KEY = registerKey("ecreate_corrupted_emerald_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_DEATH_ORE_KEY = registerKey("ecreate_death_ore");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceable = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
+        RuleTest deepslateReplaceables = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
 
         register(context, OVERWORLD_ECREATE_CORRUPTED_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(
                 List.of(OreConfiguration.target(stoneReplaceable,
@@ -45,6 +47,10 @@ public class ModConfiguredFeatures {
         register(context, OVERWORLD_ECREATE_CORRUPTED_EMERALD_ORE_KEY, Feature.ORE, new OreConfiguration(
                 List.of(OreConfiguration.target(stoneReplaceable, 
                 ModBlocks.ECREATE_CORRUPTED_EMERALD_ORE.get().defaultBlockState())), 5));
+
+        register(context, OVERWORLD_DEATH_ORE_KEY, Feature.ORE, new OreConfiguration(
+                List.of(OreConfiguration.target(deepslateReplaceables,
+                ModBlocks.DEATH_ORE.get().defaultBlockState())), 2));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

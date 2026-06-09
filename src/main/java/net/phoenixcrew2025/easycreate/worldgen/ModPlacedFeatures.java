@@ -21,6 +21,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> OVERWORLD_ECREATE_CORRUPTED_GOLD_ORE_PLACED_KEY = registerKey("ecreate_corrupted_gold_ore_placed");
     public static final ResourceKey<PlacedFeature> OVERWORLD_ECREATE_CORRUPTED_DIAMOND_ORE_PLACED_KEY = registerKey("ecreate_corrupted_diamond_ore_placed");
     public static final ResourceKey<PlacedFeature> OVERWORLD_ECREATE_CORRUPTED_EMERALD_ORE_PLACED_KEY = registerKey("ecreate_corrupted_emerald_ore_placed");
+    public static final ResourceKey<PlacedFeature> OVERWORLD_DEATH_ORE_PLACED_KEY = registerKey("ecreate_death_ore_placed");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -39,6 +40,9 @@ public class ModPlacedFeatures {
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(8), VerticalAnchor.absolute(120))));
         register(context, OVERWORLD_ECREATE_CORRUPTED_EMERALD_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_ECREATE_CORRUPTED_EMERALD_ORE_KEY),
                 ModOrePlacement.rareOrePlacement(8,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(8), VerticalAnchor.absolute(120))));
+        register(context, OVERWORLD_DEATH_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_DEATH_ORE_KEY),
+                ModOrePlacement.rareOrePlacement(2,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(8), VerticalAnchor.absolute(120))));
     }
 

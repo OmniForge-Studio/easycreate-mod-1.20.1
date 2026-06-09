@@ -82,6 +82,16 @@ public class ModBlocks {
                 }
             });
 
+    public static final RegistryObject<Block> DEATH_ORE = registerBlock("death_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
+                    .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(3, 6)){
+                @Override
+                public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+                    pTooltip.add(Component.translatable("tooltip.easycreate.death_ore"));
+                    super.appendHoverText(pStack, pLevel, pTooltip, pFlag);
+                }
+            });
+
 
     public static final RegistryObject<Block> ECREATE_CROP = BLOCKS.register("ecreate_crop",
             () -> new EcreateCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));

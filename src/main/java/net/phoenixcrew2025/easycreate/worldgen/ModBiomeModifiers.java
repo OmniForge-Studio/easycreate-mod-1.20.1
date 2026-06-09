@@ -18,6 +18,7 @@ public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_CORRUPTED_GOLD_ORE = registerKey("add_corrupted_gold_ore");
     public static final ResourceKey<BiomeModifier> ADD_CORRUPTED_DIAMOND_ORE = registerKey("add_corrupted_diamond_ore");
     public static final ResourceKey<BiomeModifier> ADD_CORRUPTED_EMERALD_ORE = registerKey("add_corrupted_emerald_ore");
+    public static final ResourceKey<BiomeModifier> ADD_DEATH_ORE = registerKey("add_death_ore");
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -42,6 +43,10 @@ public class ModBiomeModifiers {
         context.register(ADD_CORRUPTED_EMERALD_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 HolderSet.direct(biomes.getOrThrow(Biomes.DARK_FOREST)),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.OVERWORLD_ECREATE_CORRUPTED_EMERALD_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+        context.register(ADD_DEATH_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                HolderSet.direct(biomes.getOrThrow(Biomes.DEEP_DARK)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.OVERWORLD_DEATH_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
     }
 

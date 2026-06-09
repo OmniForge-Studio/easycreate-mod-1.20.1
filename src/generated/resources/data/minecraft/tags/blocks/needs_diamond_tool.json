@@ -3,6 +3,7 @@
     "easycreate:ecreate_corrupted_diamond_ore",
     "easycreate:ecreate_corrupted_emerald_ore",
     "easycreate:ecreate_corrupted_gold_ore",
-    "easycreate:ecreate_corrupted_iron_ore"
+    "easycreate:ecreate_corrupted_iron_ore",
+    "easycreate:death_ore"
   ]
 }

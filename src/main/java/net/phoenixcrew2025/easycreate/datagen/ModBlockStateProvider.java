@@ -30,6 +30,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.ECREATE_CORRUPTED_EMERALD_ORE);
         blockWithItem(ModBlocks.ECREATE_CORRUPTED_DIAMOND_ORE);
         blockWithItem(ModBlocks.ECREATE_CORRUPTED_GOLD_ORE);
+        blockWithItem(ModBlocks.DEATH_ORE);
 
         makeEcreateCrop((CropBlock) ModBlocks.ECREATE_CROP.get(), "ecreate_stage", "ecreate_stage");
     }
